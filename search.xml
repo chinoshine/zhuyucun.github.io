@@ -3,6 +3,24 @@
   
     
     <entry>
+      <title><![CDATA[hexo 发表文章]]></title>
+      <url>/2017/09/06/2017-9-6-001/</url>
+      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""> </excerpt></p>
+<h4 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h4><p>文章发表：<br><code>hexo new &quot;这是一篇文章的题目&quot;</code><br>使用md编辑文件 <a id="more"></a></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h3 id="hexo-1"><a href="#hexo-1" class="headerlink" title="hexo"></a>hexo</h3><p>文章发表：<br><code>hexo new &quot;这是一篇文章的题目&quot;</code><br>使用md编辑文件 </p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[测试：markdown的基本用法]]></title>
       <url>/2017/09/06/2017-9-6/</url>
       <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br>MaHua是什么?<br>一个在线编辑markdown文档的编辑器<br>向Mac下优秀的markdown编辑器mou致敬<a id="more"></a></excerpt></p>
