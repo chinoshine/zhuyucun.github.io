@@ -44,6 +44,14 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> ihubo = &#123;</div><div class="line">  nickName  : <span class="string">"草依山"</span>,</div><div class="line">  site : <span class="string">"http://jser.me"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></the>]]></content>
       
         
+        <tags>
+            
+            <tag> markdown </tag>
+            
+            <tag> hello world </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -63,6 +71,12 @@
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 </the>]]></content>
       
+        
+        <tags>
+            
+            <tag> hello world </tag>
+            
+        </tags>
         
     </entry>
     
