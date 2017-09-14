@@ -15,16 +15,18 @@
 
 
 
-<meta name="description" content="就让暴风雨来吧！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="玉不琢-不成器">
-<meta property="og:url" content="http://zhuyc.me/categories/Css/index.html">
+<meta name="description" content="typeof 操作符返回一个字符串，指示未经计算的操作数的类型；使用instanceof可以用来弥补不足">
+<meta name="keywords" content="javascript Api">
+<meta property="og:type" content="article">
+<meta property="og:title" content="typeof和instantof的用法">
+<meta property="og:url" content="http://zhuyc.me/2017/09/14/typeof-constructor和instantof的区别和用法/index.html">
 <meta property="og:site_name" content="玉不琢-不成器">
-<meta property="og:description" content="就让暴风雨来吧！">
+<meta property="og:description" content="typeof 操作符返回一个字符串，指示未经计算的操作数的类型；使用instanceof可以用来弥补不足">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-14T13:02:24.113Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="玉不琢-不成器">
-<meta name="twitter:description" content="就让暴风雨来吧！">
+<meta name="twitter:title" content="typeof和instantof的用法">
+<meta name="twitter:description" content="typeof 操作符返回一个字符串，指示未经计算的操作数的类型；使用instanceof可以用来弥补不足">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -56,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Category: Css | 玉不琢-不成器</title>
+<title>typeof和instantof的用法 | 玉不琢-不成器</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -66,10 +68,10 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
-        isCategory: true,
+        isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
         search: true
@@ -295,60 +297,203 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-typeof-constructor和instantof的区别和用法" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2017/09/08/Css/" class="archive-article-date">
-      <time datetime="2017-09-08T02:05:21.000Z" itemprop="datePublished">09-08</time>
+    <div class="article-meta">
+      <a href="/2017/09/14/typeof-constructor和instantof的区别和用法/" class="article-date">
+      <time datetime="2017-09-14T03:18:52.000Z" itemprop="datePublished">2017-09-14</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/08/Css/">Css</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      typeof和instantof的用法
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Css/">Css</a>
+    <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Css/">Css</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript-Api/">javascript Api</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><excerpt in="" index="" |="" 首页摘要=""><br>typeof <strong>操作符</strong>返回一个字符串，指示未经计算的操作数的类型；<br>使用instanceof可以用来弥补不足<a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<blockquote>
+<p>typeof <strong>操作符</strong>返回一个字符串，指示未经计算的操作数的类型；</p>
+</blockquote>
+<h3 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h3><p><code>typeof operand</code><br>    operand代表一个表达式、表达对象或是原始值，其类型将被返回；<br>可能的返回结果如下：<br>Undefined —————–”undefined”<br>Null—————–”object” (见下方)<br>Boolean—————– “boolean”<br>Number—————–”number”<br>String—————–”string”<br>Symbol (ES6 新增)———–”symbol”<br>宿主对象(由JS环境提供)—————–    Implementation-dependent<br>函数对象 —————–”function”<br>任何其他对象—————–”object”</p>
+<p>一些用法：<br>判断一个变量typeof返回结果、<br>判断一个变量是否存在</p>
+<blockquote>
+<p>instanceof 可以检测一个引用类型是Array还是娶她的什么。</p>
+</blockquote>
+<p>因为typeof判断<strong>引用类型</strong>时候</p>
+<blockquote>
+<p>typeof 函数   都是function<br>typeof 实例   都是object<br>无法判断</p>
+</blockquote>
+<p>使用instanceof</p>
+<blockquote>
+<p>[] instanceof Array    true<br>true instanceof Boolean  true</p>
+</blockquote>
+<p>注意：如果以上数据是判断  x instanceof object 的话全是true   （引用类型）<br>因为一切皆对象  所以毫无意义<br>一般只用来判断引用类型</p>
+<hr>
+<p><strong><em>typeof一些例子：</em></strong><br>‘’’typeof NaN === ‘number’;<br>   typeof “” === ‘string’;<br>   typeof “   “ === ‘string’;<br>   typeof Boolean(true) === true;<br>   typeof {} === ‘object’;<br>   typeof window === ‘object’;<br>   typeof []===’object’;<br>   typeof null===’object’;<br>   typeof new Date() === ‘object’;<br>   typeof new Boolean(true) === ‘object’;<br>   typeof new Number(1) ==== ‘object’;<br>   typeof new String(“abc”) === ‘object’;<br>   typeof function(){} === ‘function’;<br>   typeof Math.sin === ‘function’;’’’</p>
+</the>
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/09/14/typeof-constructor和instantof的区别和用法/">typeof和instantof的用法</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">朱玉存</a></p>
+        <p><span>发布时间:</span>2017-09-14, 11:18:52</p>
+        <p><span>最后更新:</span>2017-09-14, 21:02:24</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/09/14/typeof-constructor和instantof的区别和用法/" title="typeof和instantof的用法">http://zhuyc.me/2017/09/14/typeof-constructor和instantof的区别和用法/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://zhuyc.me/2017/09/14/typeof-constructor和instantof的区别和用法/　　作者: 朱玉存" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/09/14/JavaScript数据类型详解/">
+                    JavaScript （ES6）数据类型详解
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法："><span class="toc-number">1.</span> <span class="toc-text">语法：</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
 
     
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"typeof和instantof的用法　| 玉不琢-不成器　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
 
+    
+</div>
+
+
+
+
+
+
+
+    
+        <section class="youyan" id="comments">
+    <script>
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = 'http://v2.uyan.cc/code/uyan.js?uid=2143332';
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
+
+    <div id="uyan_frame"></div>
+</section>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/09/14/JavaScript数据类型详解/" title="下一篇: JavaScript （ES6）数据类型详解">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/14/typeof-constructor和instantof的区别和用法/">typeof和instantof的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/14/JavaScript数据类型详解/">JavaScript （ES6）数据类型详解</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/10/angular四种安装环境的方法、失败解决方案/">angular四种安装环境的方式、失败解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/08/Basics/">Basics</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/08/Nodejs/">Nodejs</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/08/Css/">Css</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/08/Html/">Html</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/06/我的兴趣爱好/">hexo 发表文章</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/06/Markdowm用法/">测试：markdown的基本用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/06/各种模板-hello-world/">Hello World</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">

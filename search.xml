@@ -3,6 +3,169 @@
   
     
     <entry>
+      <title><![CDATA[typeof和instantof的用法]]></title>
+      <url>/2017/09/14/typeof-constructor%E5%92%8Cinstantof%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E7%94%A8%E6%B3%95/</url>
+      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br>typeof <strong>操作符</strong>返回一个字符串，指示未经计算的操作数的类型；<br>使用instanceof可以用来弥补不足<a id="more"></a></excerpt></p>
+<the rest="" of="" contents="" |="" 余下全文="">
+
+<blockquote>
+<p>typeof <strong>操作符</strong>返回一个字符串，指示未经计算的操作数的类型；</p>
+</blockquote>
+<h3 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h3><p><code>typeof operand</code><br>    operand代表一个表达式、表达对象或是原始值，其类型将被返回；<br>可能的返回结果如下：<br>Undefined —————–”undefined”<br>Null—————–”object” (见下方)<br>Boolean—————– “boolean”<br>Number—————–”number”<br>String—————–”string”<br>Symbol (ES6 新增)———–”symbol”<br>宿主对象(由JS环境提供)—————–    Implementation-dependent<br>函数对象 —————–”function”<br>任何其他对象—————–”object”</p>
+<p>一些用法：<br>判断一个变量typeof返回结果、<br>判断一个变量是否存在</p>
+<blockquote>
+<p>instanceof 可以检测一个引用类型是Array还是娶她的什么。</p>
+</blockquote>
+<p>因为typeof判断<strong>引用类型</strong>时候</p>
+<blockquote>
+<p>typeof 函数   都是function<br>typeof 实例   都是object<br>无法判断</p>
+</blockquote>
+<p>使用instanceof</p>
+<blockquote>
+<p>[] instanceof Array    true<br>true instanceof Boolean  true</p>
+</blockquote>
+<p>注意：如果以上数据是判断  x instanceof object 的话全是true   （引用类型）<br>因为一切皆对象  所以毫无意义<br>一般只用来判断引用类型</p>
+<hr>
+<p><strong><em>typeof一些例子：</em></strong><br>‘’’typeof NaN === ‘number’;<br>   typeof “” === ‘string’;<br>   typeof “   “ === ‘string’;<br>   typeof Boolean(true) === true;<br>   typeof {} === ‘object’;<br>   typeof window === ‘object’;<br>   typeof []===’object’;<br>   typeof null===’object’;<br>   typeof new Date() === ‘object’;<br>   typeof new Boolean(true) === ‘object’;<br>   typeof new Number(1) ==== ‘object’;<br>   typeof new String(“abc”) === ‘object’;<br>   typeof function(){} === ‘function’;<br>   typeof Math.sin === ‘function’;’’’</p>
+</the>]]></content>
+      
+        <categories>
+            
+            <category> Javascript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript Api </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[JavaScript （ES6）数据类型详解]]></title>
+      <url>/2017/09/14/JavaScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%AF%A6%E8%A7%A3/</url>
+      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br>最新的ES6一共是7中数据类型（包括一种复杂数据类型和6种原始数据类型）<a id="more"></a></excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h2 id="数据类型种类"><a href="#数据类型种类" class="headerlink" title="数据类型种类"></a>数据类型种类</h2><p>EC5共有5种数据类型（也称为<code>基本数据类型/原始数据类型</code>）：</p>
+<blockquote>
+<p>Undefined,Null,Boolean,Number,String</p>
+</blockquote>
+<p>1种<code>复杂数据类型</code></p>
+<blockquote>
+<p>Object</p>
+</blockquote>
+<p>和ES6新加的（也是原始数据类型）</p>
+<blockquote>
+<p>Symbol </p>
+</blockquote>
+<p>所以现在最新的ES6一共是7中数据类型（包括一种复杂数据类型和6种原始数据类型）</p>
+<h2 id="引用类型和值类型"><a href="#引用类型和值类型" class="headerlink" title="引用类型和值类型"></a>引用类型和值类型</h2><p>###　值类型</p>
+<blockquote>
+<p>数值、布尔值、null、undefined</p>
+</blockquote>
+<h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><blockquote>
+<p>对象、数组、函数</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> Javascript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript基础 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[angular四种安装环境的方式、失败解决方案]]></title>
+      <url>/2017/09/10/angular%E5%9B%9B%E7%A7%8D%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83%E7%9A%84%E6%96%B9%E6%B3%95%E3%80%81%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br> &emsp;&emsp;通往angular的路由千万条，不同的选择也将决定你的项目的架构、可维护性、灵活度等<br> &emsp;&emsp;本文列举项目构建的4中方式，至于后续实践还需一个个踩坑<a id="more"></a></excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h2 id="环境搭建——angular2"><a href="#环境搭建——angular2" class="headerlink" title="环境搭建——angular2"></a>环境搭建——angular2</h2><p> &emsp;&emsp;以下介绍angular环境构建的方法,包括<code>官方指定的angular/cli</code>、<code>基于angular-seed</code>、<code>基于webpack</code>和<code>手动创建</code><br><strong> 注：本文所指的angular版本为angular2-angular4，由于能力有限，如您发现错误还请不吝赐教</strong><br><br></p>
+<h3 id="angular-cli的安装"><a href="#angular-cli的安装" class="headerlink" title="angular/cli的安装"></a>angular/cli的安装</h3><p>请参考: <a href="https://www.angular.cn/guide/quickstart" target="_blank" rel="external">官方指导文档</a><br>    官方默认是<code>npm</code>安装，文档简洁明了，但是由于每个人的环境不一，在安装过程中可能会发生以下错误：</p>
+<ol>
+<li>可能提示缺少<code>Python</code>环境；</li>
+<li>可能会依赖某些framework导致会要求安装<code>Visual Studio</code>；</li>
+<li><code>node-sass</code>报错（因为国内被墙掉了，你懂的！）</li>
+<li><code>node-gyp</code>模块可能会编译错误；</li>
+</ol>
+<p><strong>如果发生以上错误，你可以：</strong></p>
+<blockquote>
+<p>1、根据提示安装缺少的环境或配置<br> 2、使用<strong>cnpm</strong>代替npm安装 </p>
+</blockquote>
+<p><br></p>
+<h3 id="angular-seed"><a href="#angular-seed" class="headerlink" title="angular-seed"></a>angular-seed</h3><pre><code>是一个Angular的种子文件，本文特指angular2-seed，去除掉了angular/cli里面许多我们不需要的东西，
+</code></pre><p>参考地址：<a href="https://github.com/angular/angular2-seed/" target="_blank" rel="external">官方github地址</a></p>
+<p>使用：</p>
+<ol>
+<li>前置需要的安装包：<br><code>$ npm install -g webpack webpack-dev-server typescript</code></li>
+<li>使用git克隆下来：<br><code>$ git clone https://github.com/angular/angular2-seed.git</code></li>
+<li>找到克隆的文件：<br><code>$ npm install</code></li>
+<li>cd到你的文件根目录：<br><code>$ npm start</code><br>完成以上步骤你就成功运行了你的初始环境了</li>
+</ol>
+<p><br></p>
+<h3 id="基于webpack安装"><a href="#基于webpack安装" class="headerlink" title="基于webpack安装"></a>基于webpack安装</h3><pre><code>github地址：https://github.com/kunl/Angular-webpack-AOT 
+</code></pre><p><br></p>
+<h3 id="手动创建项目"><a href="#手动创建项目" class="headerlink" title="手动创建项目"></a>手动创建项目</h3><pre><code>真的勇士敢于直面惨淡的人生，敢于正视淋漓的鲜血；
+</code></pre><h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><pre><code>在开始搭建Angular环境前，还需要做一些准备工作，包括安装Angular所依赖的基础环境Node.js，需要确认Node.js版本为v4.x.x以上，npm版本为v3.x.x以上。
+</code></pre><h4 id="搭建步骤："><a href="#搭建步骤：" class="headerlink" title="搭建步骤："></a>搭建步骤：</h4><ol>
+<li><p>创建package.json，配置依赖包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">  &quot;name&quot;: &quot;HelloByHand&quot;,</div><div class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</div><div class="line">  &quot;license&quot;: &quot;MIT&quot;,</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;start&quot;: &quot;npm run server&quot;,</div><div class="line">    &quot;server&quot;: &quot;webpack-dev-server –inline –colors –progress –port 3000&quot;</div><div class="line">  &#125;,</div><div class="line">  &quot;dependencies&quot;: &#123;</div><div class="line">    &quot;@angular/common&quot;: &quot;2.0.0&quot;,</div><div class="line">    &quot;@angular/compiler&quot;: &quot;2.0.0&quot;,</div><div class="line">    &quot;@angular/core&quot;: &quot;2.0.0&quot;,</div><div class="line">    &quot;@angular/platform-browser&quot;: &quot;2.0.0&quot;,</div><div class="line">    &quot;@angular/platform-browser-dynamic&quot;: &quot;2.0.0&quot;,</div><div class="line">    &quot;reflect-metadata&quot;: &quot;~0.1.8&quot;,</div><div class="line">    &quot;core-js&quot;: &quot;~2.4.1&quot;,</div><div class="line">    &quot;rxjs&quot;: &quot;5.0.0-beta.12&quot;,</div><div class="line">    &quot;zone.js&quot;: &quot;~0.6.26&quot;</div><div class="line">  &#125;,</div><div class="line">  &quot;devDependencies&quot;: &#123;</div><div class="line">    &quot;@types/core-js&quot;: &quot;~0.9.34&quot;,</div><div class="line">    &quot;ts-loader&quot;: &quot;~1.2.0&quot;,</div><div class="line">    &quot;webpack&quot;: &quot;~1.12.9&quot;,</div><div class="line">    &quot;webpack-dev-server&quot;: &quot;~1.14.0&quot;,</div><div class="line">    &quot;typescript&quot;: &quot;~2.0.0&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建tsconfig.json,配置Typescript编译器的编译参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">  &quot;compileOnSave&quot;: true,</div><div class="line">  &quot;compilerOptions&quot;: &#123;</div><div class="line">   &quot;module&quot;: &quot;commonjs&quot;,</div><div class="line">   &quot;target&quot;: &quot;es5&quot;,</div><div class="line">    &quot;sourceMap&quot;: true,</div><div class="line">    &quot;declaration&quot;: false,</div><div class="line">    &quot;moduleResolution&quot;: &quot;node&quot;,</div><div class="line">    &quot;emitDecoratorMetadata&quot;: true,</div><div class="line">    &quot;experimentalDecorators&quot;: true,</div><div class="line">    &quot;removeComments&quot;:false,</div><div class="line">    &quot;noImplicitAny&quot;: true,</div><div class="line">    &quot;suppressExcessPropertyErrors&quot;: true,</div><div class="line">    &quot;typeRoots&quot;: [</div><div class="line">      &quot;node_modules/@types&quot;</div><div class="line">    ],</div><div class="line">    &quot;exclude&quot;: [</div><div class="line">      &quot;node_modules&quot;</div><div class="line">    ]</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建资源文件夹<br><code>在项目根目录下穿件一个src文件夹</code></p>
+</li>
+<li><p>创建组件相关文件<br>在src目录下创建<code>app.component.ts</code> 文件以及模板文件<code>app.component.html</code>，示例代码如下：</p>
+<figure class="highlight plain"><figcaption><span>app.component.ts</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">import &#123; Component &#125; from &apos;@angular/core&apos;;</div><div class="line"></div><div class="line">@Component(&#123;</div><div class="line">  selector: &apos;hello-world&apos;,</div><div class="line">  templateUrl: &apos;src/app.component.html&apos;</div><div class="line">&#125;)</div><div class="line">export class AppComponent &#123; &#125;</div><div class="line"></div><div class="line">// app.component.html</div><div class="line">&lt;h3&gt;Hello World！&lt;/h3&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建app.module.ts文件<br>在Angular应用中需要用模块来组织一些功能紧密相关的代码块，每个应用至少有一个模块，习惯上把它叫作<code>AppModule</code>。在src目录下创建一个<code>app.module.ts</code>文件来定义<code>AppModule</code>，代码如下：</p>
+<figure class="highlight plain"><figcaption><span>&#123; BrowserModule &#125; from '@angular/platform-browser';</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">import &#123; NgModule &#125; from &apos;@angular/core&apos;;</div><div class="line">import &#123; AppComponent &#125; from &apos;./app.component&apos;;</div><div class="line"></div><div class="line">@NgModule(&#123;</div><div class="line">  declarations: [</div><div class="line">    AppComponent</div><div class="line">  ],</div><div class="line">  imports: [</div><div class="line">    BrowserModule</div><div class="line">  ],</div><div class="line">  providers: [],</div><div class="line">  bootstrap: [AppComponent]</div><div class="line">&#125;)</div><div class="line">export class AppModule &#123; &#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>添加main.ts<br>Angular项目一般有一个入口文件，通过这个文件来串联起整个项目。示例代码如下：</p>
+<figure class="highlight plain"><figcaption><span>main.ts</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">import &apos;reflect-metadata&apos;;</div><div class="line">import &apos;zone.js&apos;;</div><div class="line">import &#123; platformBrowserDynamic &#125; from &apos;@angular/platform-browser-dynamic&apos;;</div><div class="line"></div><div class="line">import &#123; AppModule &#125; from &apos;./app.module&apos;;</div><div class="line"></div><div class="line">platformBrowserDynamic().bootstrapModule(AppModule)</div><div class="line">  .catch(err =&gt; console.log(err));</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建index.heml宿主页面</p>
+<figure class="highlight plain"><figcaption><span>html></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">  &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">  &lt;title&gt;Hello World&lt;/title&gt;</div><div class="line">  &lt;base href=&quot;/&quot;&gt;</div><div class="line"></div><div class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">  &lt;hello-world &gt;加载中…&lt;/hello-world&gt;</div><div class="line">&lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建webpack.config.js</p>
+<figure class="highlight plain"><figcaption><span>webpack.config.js</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">var webpack = require(&apos;webpack&apos;);</div><div class="line">var path = require(&apos;path&apos;);</div><div class="line"></div><div class="line">module.exports = &#123;</div><div class="line">   entry: &apos;./src/main.js&apos;,</div><div class="line">   output: &#123;</div><div class="line">      filename: &apos;./bundle.js&apos;</div><div class="line">   &#125;,</div><div class="line">   resolve: &#123;</div><div class="line">      root: [path.join(__dirname,&apos;src&apos;)],</div><div class="line">      extensions: [&apos;&apos;,&apos;.ts&apos;,&apos;.js&apos;]</div><div class="line">   &#125;,</div><div class="line"></div><div class="line">   module: &#123;</div><div class="line">      loaders: [</div><div class="line">       &#123; test: /\.ts$/, loader: &apos;ts-loader&apos;&#125;</div><div class="line">      ]</div><div class="line">   &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><br><br><br></p>
+<h2 id="几种安装方式的区别简单介绍"><a href="#几种安装方式的区别简单介绍" class="headerlink" title="几种安装方式的区别简单介绍"></a>几种安装方式的区别简单介绍</h2><p>angular/cli：<br>    官方推荐</p>
+<p>angular-seed：<br>    自带了简单的<code>路由</code>、自带了<code>form</code>、还带有<code>http</code>请求模块、体现出了Angular的简单功能、使得项目的体积量更小了</p>
+<p>基于webpack安装<br>    可以自由配置webpack.config.js<br>    从node转到前端的项目或公司推荐使用</p>
+<p>手动创建<br>    推荐级别的使用<br>    自由配置，想要什么是什么。方便快捷</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Tools </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> angular </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Basics]]></title>
       <url>/2017/09/08/Basics/</url>
       <content type="html"><![CDATA[<p><excerpt in="" index="" |="" 首页摘要=""><br>Basics相关导航<a id="more"></a></excerpt></p>
@@ -161,9 +324,9 @@
         
         <tags>
             
-            <tag> markdown </tag>
-            
             <tag> hello world </tag>
+            
+            <tag> markdown </tag>
             
         </tags>
         
