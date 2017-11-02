@@ -551,7 +551,7 @@ a {
 .header-author {
   text-align: center;
   margin: 13px 0;
-  font-family: "楷体",Times, Georgia, serif;
+  font-family: Times, Georgia, serif;
   font-size: 30px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
